@@ -1,0 +1,443 @@
+:root
+{
+	--swiper-pagination-color: #FFFFFF;
+	--swiper-pagination-bullet-size: 10px;
+	--swiper-pagination-bullet-inactive-color: #000000;
+	--swiper-pagination-bullet-inactive-opacity: 0.4;
+	--swiper-pagination-bullet-opacity: 1;
+	
+	--swiper-navigation-color: #FFFFFF;
+}
+
+html
+{
+	scroll-behavior: smooth;
+}
+
+html,
+body
+{
+	position: relative;
+	height: 100%;
+}
+
+body
+{
+	background: #492F8A;
+    font-family: "Montserrat", sans-serif;
+    color: #FFFFFF;
+	margin: 0;
+	padding: 0;
+    text-shadow: 2px 2px #000000;
+    text-decoration: none;
+}
+
+.no-scrollbar::-webkit-scrollbar
+{
+    display: none;
+}
+
+.no-scrollbar
+{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Swiper */
+swiper-container
+{
+	width: 100%;
+	height: 90%;
+}
+
+swiper-slide
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+swiper-slide vdo
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+swiper-slide vdo video
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* Small Swiper */
+sml-swiper .swiper-container
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Navbar */
+.navbar
+{
+	display: flex;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 999;
+}
+
+nav
+{
+	flex: 1;
+}
+
+ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li
+{
+	display: inline-block;
+	padding: 20px;
+}
+
+li a
+{
+	font-weight: 800;
+}
+
+li h3
+{
+	padding-top: 0.417vw;
+}
+
+/* Fonts */
+h1
+{
+    font-family: "Montserrat", sans-serif;
+    line-height: 32px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+h2
+{
+    font-family: "Montserrat", sans-serif;
+    line-height: 32px;
+    text-align: left;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+h3
+{
+    font-family: "Montserrat", sans-serif;
+    line-height: 32px;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.h5 a
+{
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+.h5 a:hover
+{
+    color: #818181;
+}
+
+@media (max-width: 1000px)
+{
+	.resp-1
+	{
+		font-size: 18px;
+		line-height: 18px;
+	}
+	.resp-2
+	{
+		font-size: 13.5px;
+		line-height: 18px;
+	}
+	.resp-3
+	{
+		width: 200px;
+		height: auto;
+	}
+	.resp-4
+	{
+		width: 40px;
+		height: auto;
+	}
+	.resp-5
+	{
+		width: 80px;
+		height: auto;		
+	}
+	.resp-6
+	{
+		font-size: 27px;
+		line-height: 27px;
+	}
+	.resp-7
+	{
+		font-size: 13.5px;
+		line-height: 13.5px;		
+	}
+	.resp-8
+	{
+		width: 300px;
+		height: auto;		
+	}
+	.resp-9
+	{
+		width: 216px;
+		height: auto;
+	}
+	.resp-10
+	{
+		width: 18px;
+		height: auto;
+	}
+	.resp-11
+	{
+		width: 500px;
+		height: auto;		
+	}
+	.resp-12
+	{
+		width: 100px;
+		height: auto;
+	}
+	.resp-13
+	{
+		height: 67.6px;
+	}
+	.resp-14
+	{
+		display: none;
+	}
+}
+
+@media (min-width: 1001px) and (max-width: 1550px)
+{
+	.resp-1 
+	{
+		font-size: 24px;
+		line-height: 24px;
+	}
+	.resp-2
+	{
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.resp-3
+	{
+		width: 250px;
+		height: auto;
+	}
+	.resp-4
+	{
+		width: 60px;
+		height: auto;
+	}
+	.resp-5
+	{
+		width: 120px;
+		height: auto;			
+	}
+	.resp-6
+	{
+		font-size: 36px;
+		line-height: 36px;
+	}
+	.resp-7
+	{
+		font-size: 18px;
+		line-height: 18px;		
+	}
+	.resp-8
+	{
+		width: 500px;
+		height: auto;		
+	}
+	.resp-9
+	{
+		width: 360px;
+		height: auto;
+	}
+	.resp-10
+	{
+		width: 24px;
+		height: auto;
+	}
+	.resp-11
+	{
+		width: 500px;
+		height: auto;		
+	}
+	.resp-12
+	{
+		width: 150px;
+		height: auto;
+	}
+	.resp-13
+	{
+		height: 78px;
+	}
+	.resp-14
+	{
+		display: none;
+	}
+}
+
+@media (min-width: 1551px)
+{
+	.resp-1 /* h2 */
+	{
+		font-size: 32px;
+		line-height: 32px;
+	}
+	.resp-2 /* h3 */
+	{
+		font-size: 24px;
+		line-height: 32px;
+	}
+	.resp-3 /* Paypal image */
+	{
+		width: 400px;
+		height: auto;
+	}
+	.resp-4 /* Logo */
+	{
+		width: 80px;
+		height: auto;
+	}
+	.resp-5 /* Package icons */
+	{
+		width: 200px;
+		height: auto;			
+	}
+	.resp-6 /* Package names */
+	{
+		font-size: 48px;
+		line-height: 48px;
+	}
+	.resp-7 /* Navbar text */
+	{
+		font-size: 20px;
+		line-height: 20px;		
+	}
+	.resp-8 /* Videos + Small swiper 1 */
+	{
+		width: 1000px;
+		height: auto;
+	}
+	.resp-9 /* Review swiper images */
+	{
+		width: 720px;
+		height: auto;
+	}
+	.resp-10 /* Info icons */
+	{
+		width: 32px;
+		height: auto;
+	}
+	.resp-11 /* Small swiper 2 */
+	{
+		width: 1000px;
+		height: auto;		
+	}
+	.resp-12 /* FAQ Icons */
+	{
+		width: 300px;
+		height: auto;
+	}
+	.resp-13
+	{
+		height: 104px;
+	}
+	.resp-14
+	{
+		width: 400px;
+		height: auto;
+	}
+}
+
+/* Text Animation */
+.slide-up
+{
+    animation: slide-up 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    transform: translate3d(0, 100%, 0);
+    opacity: 0;
+}
+
+@keyframes slide-up
+{
+    from
+    {
+        transform: translate3d(0, 100%, 0);
+    }
+    to
+    {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+/* Image Box Shadow */
+.image-shadow
+{
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.35);
+}
+
+.image-scaling
+{
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Image Scale on Hover */
+.image-scaling:hover
+{
+    transform: scale(1.03);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Copy contact details */
+.copy-text
+{
+	padding: 10px;
+	background: #1C1C1C;
+	display: flex;
+}
+.copy-text input.text
+{
+	padding: 10px;
+	font-size: 18px;
+	color: #FFFFFF;
+	background-color: #1C1C1C;
+	border: none;
+	outline: none;
+}
+.copy-text button
+{
+	padding: 10px;
+	background: #1C1C1C;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
